@@ -17,7 +17,7 @@ function convertObjectKeyToValue2(obj) {
   for (const key in obj) {
     result[obj[key]] = key;
   }
-  console.log(result);
+  return result;
 }
 // convertObjectKeyToValue2(person);
 //Excercise 2
@@ -38,6 +38,6 @@ function convertPropertyToArray(obj) {
     for(const key in obj){
         result.push([key, obj[key]]);
     }
-    console.log(result);
+   return result;
 }
 convertPropertyToArray(person);
