@@ -45,6 +45,7 @@ function convertUrl(url, size) {
 
 
   if(REGEX0.test(url)){
+    console.log(url.replace(REGEX0, `e_${size}.jpg`));
     return url.replace(REGEX0, `e_${size}.jpg`);
   }else if (REGEX1.test(url)) {
     return url.replace(REGEX1, `/e_${size}.jpg`);
@@ -65,3 +66,10 @@ tests.forEach((element) => {
     console.log(convertUrl(element.input, element.size));
   }
 });
+
+const str = 'John Smith Minh Thanh Alien Meo';
+const REGEX  =  /(\w+)\s(\w+)/gm;
+
+console.log(str.match(REGEX));
+console.log(REGEX.test(str));
+console.log(str.replace(REGEX,`$2, $1`));
