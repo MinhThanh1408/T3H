@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+}
+.form {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+.show{
+    display: flex;
+}
+
